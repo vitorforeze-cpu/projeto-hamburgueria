@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lake Hamburgueria em Campinas: hambúrgueres artesanais com carne maturada, pão feito na casa e blend próprio.">
+    <title>Lake Hamburgueria | Campinas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="cabecalho">
+        <div class="conteudo cabecalho-conteudo">
+            <a class="marca" href="#inicio" aria-label="Lake Hamburgueria - voltar ao início">
+                <span>Lake</span>
+                <small>Hamburgueria</small>
+            </a>
+
+            <nav class="navegacao" id="menu-principal" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#a-lake">A Lake</a>
+                <a href="#hamburgueres">Hambúrgueres</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <div class="cabecalho-acoes">
+                <button class="botao-carrinho" type="button" aria-label="Abrir carrinho com 0 itens" aria-controls="painel-carrinho">
+                    Carrinho
+                    <span class="contador-carrinho" aria-hidden="true">0</span>
+                </button>
+
+                <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner principal -->
+        <section class="banner" id="inicio">
+            <img class="banner-fundo" src="imagens/hero-lake-v2.png" alt="Hambúrguer artesanal duplo da Lake com cheddar derretido" width="1664" height="936" fetchpriority="high">
+            <div class="conteudo banner-conteudo">
+                <div class="banner-texto">
+                    <p class="texto-destaque">Ingredientes reais. Sabor de verdade.</p>
+                    <h1>Sabor intenso.<br>Camadas de verdade.</h1>
+                    <p class="banner-frase">Blend próprio de carne maturada, cheddar derretido e pão brioche feito na casa. Preparado na hora, do nosso fogo direto para a sua mesa.</p>
+
+                    <div class="banner-acoes">
+                        <a class="botao botao-destaque" href="#hamburgueres">Pedir agora <span aria-hidden="true">→</span></a>
+                        <a class="botao botao-secundario" href="#cardapio">Ver cardápio</a>
+                    </div>
+
+                    <div class="banner-detalhes" aria-label="Diferenciais do hambúrguer Lake">
+                        <div class="banner-detalhe">
+                            <span class="detalhe-simbolo">100%</span>
+                            <div>
+                                <strong>Carne de verdade</strong>
+                                <small>Sem atalhos. Só sabor.</small>
+                            </div>
+                        </div>
+                        <div class="banner-detalhe">
+                            <span class="detalhe-simbolo">Fogo</span>
+                            <div>
+                                <strong>Grelhado no ponto</strong>
+                                <small>Suculento a cada mordida.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apresentação da hamburgueria -->
+        <section class="secao apresentacao" id="a-lake">
+            <div class="conteudo apresentacao-conteudo">
+                <div class="secao-cabecalho">
+                    <p class="texto-destaque">Feito com tempo e intenção</p>
+                    <h2>Uma casa de sabor autêntico</h2>
+                </div>
+
+                <div class="apresentacao-texto">
+                    <p>Na Lake, a carne maturada encontra o pão preparado diariamente na casa e um blend próprio, pensado para ficar suculento por dentro e dourado por fora.</p>
+                    <p>O salão combina madeira, tijolo à vista e iluminação quente para criar uma experiência acolhedora, do primeiro brinde à última mordida.</p>
+                </div>
+
+                <div class="diferenciais" aria-label="Diferenciais da Lake">
+                    <div class="diferencial">
+                        <span>01</span>
+                        <strong>Carne maturada</strong>
+                    </div>
+                    <div class="diferencial">
+                        <span>02</span>
+                        <strong>Pão feito na casa</strong>
+                    </div>
+                    <div class="diferencial">
+                        <span>03</span>
+                        <strong>Blend próprio</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hambúrgueres da casa -->
+        <section class="secao secao-cardapio" id="hamburgueres">
+            <div class="conteudo">
+                <div class="secao-cabecalho secao-cabecalho-centralizado">
+                    <p class="texto-destaque">Nosso fogo, sua escolha</p>
+                    <h2>Hambúrgueres da Casa</h2>
+                </div>
+
+                <div class="grade-produtos">
+                    <article class="cartao-produto">
+                        <img src="imagens/x-tudo.jpg" alt="X-Tudo da Lake com dois hambúrgueres, queijo, bacon e salada" width="736" height="736" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>X-Tudo Lake</h3>
+                                <span>R$ 58</span>
+                            </div>
+                            <p>Dois blends, cheddar, bacon crocante, picles, tomate, alface e molho da casa.</p>
+                            <button class="botao-adicionar" type="button" data-produto="X-Tudo Lake" data-preco="58">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-produto">
+                        <img src="imagens/x-bacon.jpg" alt="X-Bacon da Lake com hambúrguer, cheddar e bacon crocante" width="736" height="736" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>X-Bacon</h3>
+                                <span>R$ 46</span>
+                            </div>
+                            <p>Blend da casa, cheddar, bacon crocante, cebola roxa e maionese defumada.</p>
+                            <button class="botao-adicionar" type="button" data-produto="X-Bacon" data-preco="46">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-produto">
+                        <img src="imagens/cheesburguer.jpg" alt="Cheeseburger da Lake com blend artesanal e queijo derretido" width="720" height="1047" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>Cheeseburger</h3>
+                                <span>R$ 38</span>
+                            </div>
+                            <p>Blend artesanal, queijo cheddar, pão brioche tostado e molho especial Lake.</p>
+                            <button class="botao-adicionar" type="button" data-produto="Cheeseburger" data-preco="38">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-produto">
+                        <img src="imagens/cheesburguer%20kid.jpg" alt="Hambúrguer Kids da Lake com carne e queijo" width="735" height="490" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>Burger Kids</h3>
+                                <span>R$ 32</span>
+                            </div>
+                            <p>Blend em tamanho infantil, queijo, pão macio e maionese suave da casa.</p>
+                            <button class="botao-adicionar" type="button" data-produto="Burger Kids" data-preco="32">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-produto">
+                        <img src="imagens/cheedar.jpg" alt="Hambúrguer Cheddar da Lake com queijo cremoso e bacon" width="736" height="920" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>Cheddar da Casa</h3>
+                                <span>R$ 45</span>
+                            </div>
+                            <p>Blend maturado, cheddar cremoso, bacon, cebola caramelizada e pão brioche.</p>
+                            <button class="botao-adicionar" type="button" data-produto="Cheddar da Casa" data-preco="45">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-produto">
+                        <img src="imagens/batata%20frita.jpg" alt="Porção de batatas fritas douradas da Lake" width="736" height="736" loading="lazy">
+                        <div class="cartao-produto-conteudo">
+                            <div class="produto-titulo">
+                                <h3>Batata Lake</h3>
+                                <span>R$ 32</span>
+                            </div>
+                            <p>Batatas crocantes, sal de ervas, cheddar cremoso e bacon crocante.</p>
+                            <button class="botao-adicionar" type="button" data-produto="Batata Lake" data-preco="32">Adicionar ao carrinho</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos mais pedidos -->
+        <section class="secao mais-pedidos">
+            <div class="conteudo">
+                <div class="secao-cabecalho">
+                    <p class="texto-destaque">Favoritos de Campinas</p>
+                    <h2>Mais Pedidos</h2>
+                </div>
+
+                <div class="grade-mais-pedidos">
+                    <article class="cartao-mais-pedido">
+                        <div class="mais-pedido-imagem">
+                            <img src="imagens/x-tudo.jpg" alt="X-Tudo Lake, um dos hambúrgueres mais pedidos" width="736" height="736" loading="lazy">
+                            <span>Mais pedido</span>
+                        </div>
+                        <div class="mais-pedido-conteudo">
+                            <h3>X-Tudo Lake</h3>
+                            <p>Generoso, suculento e completo.</p>
+                            <button class="botao-adicionar" type="button" data-produto="X-Tudo Lake" data-preco="58">Adicionar</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-mais-pedido">
+                        <div class="mais-pedido-imagem">
+                            <img src="imagens/cheesburguer.jpg" alt="Cheeseburger Lake, um dos hambúrgueres mais pedidos" width="720" height="1047" loading="lazy">
+                            <span>Mais pedido</span>
+                        </div>
+                        <div class="mais-pedido-conteudo">
+                            <h3>Cheeseburger</h3>
+                            <p>O clássico no ponto certo.</p>
+                            <button class="botao-adicionar" type="button" data-produto="Cheeseburger" data-preco="38">Adicionar</button>
+                        </div>
+                    </article>
+
+                    <article class="cartao-mais-pedido">
+                        <div class="mais-pedido-imagem">
+                            <img src="imagens/x-bacon.jpg" alt="X-Bacon Lake, um dos hambúrgueres mais pedidos" width="736" height="736" loading="lazy">
+                            <span>Mais pedido</span>
+                        </div>
+                        <div class="mais-pedido-conteudo">
+                            <h3>X-Bacon</h3>
+                            <p>Defumado, crocante e intenso.</p>
+                            <button class="botao-adicionar" type="button" data-produto="X-Bacon" data-preco="46">Adicionar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cardápio resumido -->
+        <section class="secao cardapio-resumido" id="cardapio">
+            <div class="conteudo">
+                <div class="secao-cabecalho secao-cabecalho-centralizado">
+                    <p class="texto-destaque">Escolha sem pressa</p>
+                    <h2>Cardápio</h2>
+                </div>
+
+                <div class="grade-categorias">
+                    <article class="categoria-cardapio">
+                        <h3>Hambúrgueres</h3>
+                        <ul>
+                            <li><span>Cheeseburger</span><strong>R$ 38</strong></li>
+                            <li><span>X-Bacon</span><strong>R$ 46</strong></li>
+                            <li><span>X-Tudo Lake</span><strong>R$ 58</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="categoria-cardapio">
+                        <h3>Acompanhamentos</h3>
+                        <ul>
+                            <li><span>Batata tradicional</span><strong>R$ 20</strong></li>
+                            <li><span>Batata Lake</span><strong>R$ 32</strong></li>
+                            <li><span>Anéis de cebola</span><strong>R$ 26</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="categoria-cardapio">
+                        <h3>Bebidas</h3>
+                        <ul>
+                            <li><span>Refrigerante lata</span><strong>R$ 8</strong></li>
+                            <li><span>Suco natural</span><strong>R$ 12</strong></li>
+                            <li><span>Água com gás</span><strong>R$ 7</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="categoria-cardapio">
+                        <h3>Sobremesas</h3>
+                        <ul>
+                            <li><span>Brownie da casa</span><strong>R$ 18</strong></li>
+                            <li><span>Pudim de leite</span><strong>R$ 16</strong></li>
+                            <li><span>Milk-shake</span><strong>R$ 22</strong></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="cardapio-acao">
+                    <a class="link-destaque" href="https://wa.me/5519727381711?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20o%20card%C3%A1pio%20completo%20da%20Lake." target="_blank" rel="noopener noreferrer">Ver cardápio completo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="secao depoimentos" id="depoimentos">
+            <div class="conteudo">
+                <div class="secao-cabecalho">
+                    <p class="texto-destaque">Quem prova, conta</p>
+                    <h2>Depoimentos de Clientes</h2>
+                </div>
+
+                <div class="grade-depoimentos">
+                    <article class="cartao-depoimento">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“O X-Bacon chegou no ponto perfeito e o pão realmente faz diferença. Voltarei com certeza.”</blockquote>
+                        <p class="nome-cliente">Mariana Alves</p>
+                    </article>
+
+                    <article class="cartao-depoimento">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“Ambiente muito agradável, atendimento atencioso e um cheeseburger simples, mas impecável.”</blockquote>
+                        <p class="nome-cliente">Rafael Moura</p>
+                    </article>
+
+                    <article class="cartao-depoimento">
+                        <p class="estrelas" aria-label="5 de 5 estrelas">★★★★★</p>
+                        <blockquote>“O X-Tudo é muito bem servido e saboroso. A batata com cheddar completa o pedido.”</blockquote>
+                        <p class="nome-cliente">Camila Santos</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localização e reserva -->
+        <section class="secao localizacao" id="localizacao">
+            <div class="conteudo">
+                <div class="localizacao-grade">
+                    <div class="localizacao-informacoes">
+                        <div class="secao-cabecalho">
+                            <p class="texto-destaque">Venha para a mesa</p>
+                            <h2>Localização</h2>
+                        </div>
+                        <address>
+                            <strong>Lake Hamburgueria</strong>
+                            <span>Avenida #####, nº 612</span>
+                            <span>Campinas - SP</span>
+                        </address>
+                        <div class="horario">
+                            <strong>Horário de funcionamento</strong>
+                            <span>Terça a domingo, das 18h às 23h30</span>
+                        </div>
+                    </div>
+
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps?q=Campinas%2C%20SP&amp;output=embed" title="Mapa com a localização da Lake em Campinas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="reserva">
+                    <div>
+                        <p class="texto-destaque">Seu lugar está à mesa</p>
+                        <h3>Reserve para aproveitar a noite com calma.</h3>
+                    </div>
+                    <a class="botao botao-whatsapp" href="https://wa.me/5519727381711?text=Ol%C3%A1%21%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Lake%20para%20..." target="_blank" rel="noopener noreferrer">Reservar pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chamada final -->
+        <section class="secao chamada-final">
+            <div class="conteudo chamada-final-conteudo">
+                <p class="texto-destaque">Combo da semana</p>
+                <h2>X-Bacon + batata + bebida</h2>
+                <p>Uma combinação completa para matar a fome, preparada na hora e pronta para pedir.</p>
+                <div class="combo-preco"><span>por</span> R$ 56</div>
+                <button class="botao botao-claro botao-adicionar" type="button" data-produto="Combo da semana" data-preco="56">Adicionar combo ao carrinho</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="conteudo rodape-conteudo">
+            <div class="rodape-marca">
+                <span class="marca">Lake</span>
+                <p>Hambúrguer artesanal, feito em Campinas.</p>
+            </div>
+
+            <div class="rodape-informacoes">
+                <div>
+                    <strong>Endereço</strong>
+                    <p>Avenida #####, nº 612<br>Campinas - SP</p>
+                </div>
+                <div>
+                    <strong>Contato</strong>
+                    <a href="tel:+5519727381711">(19) 72738-1711</a>
+                    <a href="https://www.instagram.com/KontOficial/" target="_blank" rel="noopener noreferrer">@KontOficial</a>
+                </div>
+                <div>
+                    <strong>Horários</strong>
+                    <p>Terça a domingo<br>18h às 23h30</p>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo rodape-direitos">
+            <p>&copy; 2026 Lake Hamburgueria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carrinho de pedidos -->
+    <div class="fundo-carrinho" hidden></div>
+    <aside class="painel-carrinho" id="painel-carrinho" aria-labelledby="titulo-carrinho" aria-hidden="true">
+        <div class="carrinho-cabecalho">
+            <div>
+                <p class="texto-destaque">Seu pedido</p>
+                <h2 id="titulo-carrinho">Carrinho</h2>
+            </div>
+            <button class="fechar-carrinho" type="button" aria-label="Fechar carrinho">×</button>
+        </div>
+
+        <div class="carrinho-conteudo">
+            <p class="carrinho-vazio">Seu carrinho está vazio. Escolha um item do cardápio para começar.</p>
+            <ul class="lista-carrinho" aria-live="polite"></ul>
+        </div>
+
+        <div class="carrinho-rodape">
+            <div class="carrinho-total">
+                <span>Total</span>
+                <strong>R$ 0,00</strong>
+            </div>
+            <button class="botao botao-whatsapp finalizar-pedido" type="button" disabled>Finalizar no WhatsApp</button>
+        </div>
+    </aside>
+
+    <button class="carrinho-flutuante botao-carrinho" type="button" aria-label="Abrir carrinho com 0 itens" aria-controls="painel-carrinho">
+        Ver carrinho
+        <span class="contador-carrinho" aria-hidden="true">0</span>
+    </button>
+
+    <p class="aviso-carrinho" role="status" aria-live="polite"></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
